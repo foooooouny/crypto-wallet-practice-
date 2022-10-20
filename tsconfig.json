@@ -1,6 +1,6 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "baseUrl": "./",
     "target": "ESNext",
     "lib": [
       "dom",
@@ -20,9 +20,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
-    "paths": {
-      "@/utils/*": ["utils/*"],
-    }
   },
   "include": [
     "src"
