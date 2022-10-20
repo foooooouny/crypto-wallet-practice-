@@ -1,8 +1,15 @@
-import React from 'react';
+import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import { seedToMnemonic } from '@/utils/wallet'
+
+const App = () => {
+  useEffect(() => {
+    const seed = '0x00000000000000000000000000000000000000000000000000'
+    const mnemonic = seedToMnemonic(seed)
+    console.log('- mnemonic', mnemonic, seed)
+  })
   return (
     <div className="App">
       <header className="App-header">
