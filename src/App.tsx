@@ -8,7 +8,7 @@ const App = () => {
   useEffect(() => {
     const seed = '0x00000000000000000000000000000000000000000000000000'
     const mnemonic = seedToMnemonic(seed)
-    console.log('- mnemonic', mnemonic, seed)
+    console.log('- mnemonic3', mnemonic, seed)
   })
   return (
     <div className="App">
